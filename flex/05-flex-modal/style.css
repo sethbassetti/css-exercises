@@ -5,34 +5,55 @@ html, body {
 }
 
 body {
-  font-family: Roboto, sans-serif;
-  margin: 0;
   background: #aaa;
-  color: #333;
-  /* I'll give you this one for free lol */
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: Roboto, sans-serif;
 }
 
 .modal {
   background: white;
+  display: flex;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 10px;
 }
 
 .icon {
   color: royalblue;
-  font-size: 26px;
-  font-weight: 700;
-  background: lavender;
+  border-radius: 50%;
   width: 42px;
   height: 42px;
-  border-radius: 50%;
-  display: flex;
+  font-size: 26px;
+  font-weight: 700;
   align-items: center;
   justify-content: center;
+  display: flex;
+  background: lavender;
+  margin: 10px;
+  flex-shrink: 0;
+  
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vert-container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
 }
 
 .close-button {
@@ -66,4 +87,9 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.button-box {
+  display: flex;
+  gap: 5px;
 }
